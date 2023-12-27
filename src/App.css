@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-.Arena {
+.arena {
   margin: 0;
   padding: 0;
   background: url("../public/assets/arena/ionia-arena.jpg") no-repeat center center fixed;
@@ -20,7 +20,7 @@
   height: 100vh;
 }
 
-.Title-Banner {
+.title-banner {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -33,21 +33,59 @@
   align-items: center;
   width: 80%;
   height: 30%;
-  /* width: 800px;
-  height: 150px; */
+  transition: opacity 2s ease; /* Add transition for opacity */
 
 }
 
-
-
-.Title-Text {
+.title-text {
   font-family: 'Beaufort-Bold', sans-serif;
   padding-top: 1%;
   color: #F0E6D2; /* Set the text color */
   font-size: 48px; /* Set the font size */
   text-align: center;
+  user-select: none;
 
   /* Add any additional styling for the text as needed */
+}
 
+.play-button {
+  font-family: 'Spiegel-Bold', sans-serif;
+  display: block;
+  margin: 20px auto; /* Adjust the margin as needed */
+  padding: 10px 20px; /* Adjust the padding as needed */
+  background-color: #32281e;
+  font-size: 16px;
+  color: #F0E6D2;
+  border-color: #0A1428;
+  border-width: 4px;
+  position: absolute;
+  outline: 4px solid #C8AA6E;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1px;
+  transition: opacity 2s ease; /* Add transition for opacity */
+  
+}
+
+.shop {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../public/assets/hud/shop.png"); 
+  background-size: cover;
+  border-width: 4px;
+  border-color: #785A28;
+  border-style:solid; 
+  width: 70%;
+  height: 13%;
+  padding: 20px;
+  transition: opacity 2s ease; /* Add transition for opacity */
+
+}
+
+.hide {
+  opacity: 0;
 }
 
