@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Beaufort-Bold';
+  src: url("../public/assets/fonts/BeaufortforLOL-Bold.ttf") format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Spiegel-Bold';
+  src: url("../public/assets/fonts/Spiegel_TT_Bold.ttf") format('truetype'); 
+  font-weight: bold;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Arena {
+  margin: 0;
+  padding: 0;
+  background: url("../public/assets/arena/ionia-arena.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Title-Banner {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Adjust the value as needed */
+  background: url("../public/assets/hud/title-banner.png") no-repeat center center; /* Set the background image */
+  background-size: contain; /* Adjust the background size as needed */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+  /* width: 800px;
+  height: 150px; */
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.Title-Text {
+  font-family: 'Beaufort-Bold', sans-serif;
+  padding-top: 1%;
+  color: #F0E6D2; /* Set the text color */
+  font-size: 48px; /* Set the font size */
+  text-align: center;
+
+  /* Add any additional styling for the text as needed */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
