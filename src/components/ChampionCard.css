@@ -1,9 +1,11 @@
 .champion-card {
-    border: 1px solid #ccc;
-    width: 180px;
+    width: 173px;
     height: 130px;
-    left: 18%;
-    top: 5%;
-    position: absolute;
+    background-image: url("../../public/assets/hud/empty-card.png");
+    background-size: cover;
+    margin-right: 5px;
+    border-color: #0A1428;
+    color: #F0E6D2;
+    
 
   }

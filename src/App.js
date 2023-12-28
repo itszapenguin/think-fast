@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import ChampionCard from './components/ChampionCard';
+import ChampionsList from './components/ChampionsList';
 
 function App() {
   const [introIsVisible, setIntroIsVisible] = useState(true);
@@ -116,9 +117,9 @@ function App() {
                 <p className="refresh-text">Reroll</p>
                 
               </button>
+              <ChampionsList></ChampionsList>
 
-              <ChampionCard>
-              </ChampionCard>
+  
             </div>
           
           </div>
