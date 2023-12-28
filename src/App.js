@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import ChampionCard from './components/ChampionCard';
 
 function App() {
   const [introIsVisible, setIntroIsVisible] = useState(true);
@@ -10,11 +11,25 @@ function App() {
 
   const [playerLevel, setPlayerLevel] = useState(2);
 
+  const [playerOdds, setPlayerOdds] = useState([100, 0, 0, 0, 0]);
+
   const [levelCost, setLevelCost] = useState(2);
 
   const [levelProgress, setLevelProgress] = useState(0);
 
-  const levelCosts = [0, 2, 6, 10, 20, 36, 48, 80, 84];
+  const poolSize = [null, 22, 20, 17, 10, 9];
+
+  const levelCosts = [null, null, 6, 10, 20, 36, 48, 80, 84];
+
+  const shopOdds = [null, null, 
+                    [75, 25, 0, 0, 0], 
+                    [55, 30, 15, 0, 0], 
+                    [45, 33, 20, 2, 0], 
+                    [30, 40, 25, 5, 0], 
+                    [19, 35, 35, 10, 1], 
+                    [18, 25, 36, 18, 3], 
+                    [10, 20, 25, 35, 10], 
+                    [5, 10, 20, 40, 25]];
 
   const handlePlayClick = () => {
     setIntroIsVisible(false);
@@ -32,6 +47,7 @@ function App() {
   const levelUp = () => {
     setPlayerLevel(playerLevel+1);
     setLevelCost(levelCosts[playerLevel]);
+    setPlayerOdds(shopOdds[playerLevel]);
   }
 
   const buyXP = () => {
@@ -77,7 +93,7 @@ function App() {
       {shopIsVisible && (
         <div className="hud" alt = "hud">
           <div className="chances"> 
-              
+              <p className="chances-text">{playerOdds}</p>
           </div>
           <div className="player-level">
             <p className="player-level-text">Lvl. {playerLevel}</p>
@@ -100,6 +116,9 @@ function App() {
                 <p className="refresh-text">Reroll</p>
                 
               </button>
+
+              <ChampionCard>
+              </ChampionCard>
             </div>
           
           </div>

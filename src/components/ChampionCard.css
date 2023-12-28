@@ -1,0 +1,9 @@
+.champion-card {
+    border: 1px solid #ccc;
+    width: 180px;
+    height: 130px;
+    left: 18%;
+    top: 5%;
+    position: absolute;
+
+  }
