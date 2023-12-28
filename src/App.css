@@ -6,11 +6,26 @@
 }
 
 @font-face {
+  font-family: 'Spiegel-Medium';
+  src: url("../public/assets/fonts/BeaufortforLOL-Medium.ttf") format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Spiegel-Bold';
   src: url("../public/assets/fonts/Spiegel_TT_Bold.ttf") format('truetype'); 
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Spiegel-Regular';
+  src: url("../public/assets/fonts/Spiegel_TT_Regular.ttf") format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .arena {
   margin: 0;
@@ -75,8 +90,8 @@
   transform: translate(-50%, -50%);
   background-image: url("../public/assets/hud/shop.png"); 
   background-size: cover;
-  border-width: 4px;
-  border-color: #785A28;
+  border-width: 3px;
+  border-color: #8e7040;
   border-style:solid; 
   width: 70%;
   height: 13%;
@@ -84,6 +99,107 @@
   transition: opacity 2s ease; /* Add transition for opacity */
 
 }
+
+.refresh {
+  background-image: url("../public/assets/hud/refresh.png");
+  background-color: #0A1428;
+  background-size: cover;
+  width: 180px;
+  height: 65px;
+  border-width: 0;
+  position: absolute;
+  left: 0.75%;
+  top: 50%;
+
+
+}
+
+.refresh-text {
+  font-family: 'Beaufort-Bold', sans-serif;
+  color: #F0E6D2;
+  position: absolute;
+  font-size: 18px;
+  left: 10%;
+  bottom: 20%
+ 
+}
+
+.level {
+  background-image: url("../public/assets/hud/level.png"); 
+  background-color: #0A1428;
+  background-size: cover;
+  width: 180px;
+  height: 65px;
+  border-width: 0;
+  top: 5%;
+  left: 0.75%;
+  position: absolute;
+  
+}
+
+.level-text {
+  font-family: 'Beaufort-Bold', sans-serif;
+  color: #F0E6D2;
+  position: absolute;
+  font-size: 18px;
+  left: 10%;
+  bottom: 20%
+
+  
+}
+
+.player-level {
+  background-image: url("../public/assets/hud/player-level.png");
+  background-size: cover;
+  width: 245px;
+  height: 54px;
+  position: absolute;
+  top: 75%;
+  left: 13.4%
+}
+
+.player-level-text {
+  font-family: 'Beaufort-Bold', sans-serif;
+  font-size: 24px;
+  color: #F0E6D2;
+  position: absolute;
+  left: 10%;
+  bottom: -20%;
+  user-select: none;
+
+}
+
+.chances {
+  background-image: url("../public/assets/hud/chances.png");
+  background-size: cover;
+  width: 300px;
+  height: 30px;
+  position: absolute;
+  top: 77.5%;
+  left: 25%;
+  opacity: 75%;
+
+}
+
+.player-progress-text {
+  font-family: 'Beaufort-Bold', sans-serif;
+  position: absolute;
+  color: #F0E6D2;
+  left: 60%;
+  top: 7.5%;
+  font-size: 14px;
+  user-select: none;
+
+}
+
+.player-money {
+
+}
+
+.player-money-text {
+
+}
+
 
 .hide {
   opacity: 0;
