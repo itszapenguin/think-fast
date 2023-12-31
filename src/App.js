@@ -110,7 +110,11 @@ function App() {
       {shopIsVisible && (
         <div className="hud" alt = "hud">
           <div className="chances"> 
-              <p className="chances-text">{playerOdds}</p>
+              <div className="one-chance">{playerOdds[0]+"%"}</div>
+              <div className="two-chance">{playerOdds[1]+"%"}</div>
+              <div className="three-chance">{playerOdds[2]+"%"}</div>
+              <div className="four-chance">{playerOdds[3]+"%"}</div>
+              <div className="five-chance">{playerOdds[4]+"%"}</div>
           </div>
           <div className="player-level">
             <p className="player-level-text">Lvl. {playerLevel}</p>

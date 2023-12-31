@@ -204,16 +204,16 @@
   position: absolute;
   top: 77.5%;
   left: 26%;
-  opacity: 75%;
+  opacity: 70%;
 
 }
-
+/* 
 .chances-text {
   color: #F0E6D2;
   position: absolute;
   top: -25%;
   left: 50%
-}
+} */
 
 .player-progress-text {
   font-family: 'Beaufort-Bold', sans-serif;
@@ -272,3 +272,84 @@
   opacity: 0;
 }
 
+
+.one-chance {
+  font-family: 'Spiegel-Regular', sans-serif; 
+
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  background-image: url("../public/assets/hud/gem-1.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #F0E6D2;
+
+}
+
+.two-chance {
+  font-family: 'Spiegel-Regular', sans-serif; 
+
+  position: absolute;
+  left: 34%;
+  top: 20%;
+  background-image: url("../public/assets/hud/gem-2.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-size: 6px 6px;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #F0E6D2;
+ 
+}
+
+
+.three-chance {
+  font-family: 'Spiegel-Regular', sans-serif; 
+
+  position: absolute;
+  left: 49%;
+  top: 20%;
+  background-image: url("../public/assets/hud/gem-3.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  text-indent: 12px;
+  font-size: 14px;
+  color: #F0E6D2;
+ 
+}
+
+
+.four-chance {
+  font-family: 'Spiegel-Regular', sans-serif; 
+
+  position: absolute;
+  left: 64%;
+  top: 20%;
+  background-image: url("../public/assets/hud/gem-4.png");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  
+  text-indent: 12px;
+  font-size: 14px;
+  color: #F0E6D2;
+ 
+}
+
+.five-chance {
+  font-family: 'Spiegel-Regular', sans-serif; 
+
+  position: absolute;
+  left: 79%;
+  top: 20%;
+  background-image: url("../public/assets/hud/gem-5.png");
+  background-repeat: no-repeat;
+  background-size: 7px 8px;
+
+  background-position-y: 50%;
+  text-indent: 10px;
+  font-size: 14px;
+  color: #F0E6D2;
+ 
+}
