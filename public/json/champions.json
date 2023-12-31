@@ -1,0 +1,175 @@
+{
+    "TFT10_Ahri": {
+      "id": "TFT10_Ahri",
+      "name": "Ahri",
+      "cost": 4,
+      "image": "TFT10_Ahri.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Akali": {
+      "id": "TFT10_Akali",
+      "name": "Akali",
+      "cost": 4,
+      "image": "TFT10_Akali.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Amumu": {
+      "id": "TFT10_Amumu",
+      "name": "Amumu",
+      "cost": 3,
+      "image": "TFT10_Amumu.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Annie": {
+      "id": "TFT10_Annie",
+      "name": "Annie",
+      "cost": 1,
+      "image": "TFT10_Annie.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Aphelios": {
+      "id": "TFT10_Aphelios",
+      "name": "Aphelios",
+      "cost": 2,
+      "image": "TFT10_Aphelios.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Bard": {
+      "id": "TFT10_Bard",
+      "name": "Bard",
+      "cost": 2,
+      "image": "TFT10_Bard.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Blitzcrank": {
+      "id": "TFT10_Blitzcrank",
+      "name": "Blitzcrank",
+      "cost": 4,
+      "image": "TFT10_Blitzcrank.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Caitlyn": {
+      "id": "TFT10_Caitlyn",
+      "name": "Caitlyn",
+      "cost": 4,
+      "image": "TFT10_Caitlyn.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Corki": {
+      "id": "TFT10_Corki",
+      "name": "Corki",
+      "cost": 1,
+      "image": "TFT10_Corki.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Ekko": {
+      "id": "TFT10_Ekko",
+      "name": "Ekko",
+      "cost": 3,
+      "image": "TFT10_Ekko.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Evelynn": {
+      "id": "TFT10_Evelynn",
+      "name": "Evelynn",
+      "cost": 1,
+      "image": "TFT10_Evelynn.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Ezreal": {
+      "id": "TFT10_Ezreal",
+      "name": "Ezreal",
+      "cost": 4,
+      "image": "TFT10_Ezreal.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Gnar": {
+      "id": "TFT10_Gnar",
+      "name": "Gnar",
+      "cost": 2,
+      "image": "TFT10_Gnar.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Gragas": {
+      "id": "TFT10_Gragas",
+      "name": "Gragas",
+      "cost": 2,
+      "image": "TFT10_Gragas.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Illaoi": {
+      "id": "TFT10_Illaoi",
+      "name": "Illaoi",
+      "cost": 5,
+      "image": "TFT10_Illaoi.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Jax": {
+      "id": "TFT10_Jax",
+      "name": "Jax",
+      "cost": 2,
+      "image": "TFT10_Jax.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Jhin": {
+      "id": "TFT10_Jhin",
+      "name": "Jhin",
+      "cost": 5,
+      "image": "TFT10_Jhin.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Jinx": {
+      "id": "TFT10_Jinx",
+      "name": "Jinx",
+      "cost": 1,
+      "image": "TFT10_Jinx.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Karthus": {
+      "id": "TFT10_Karthus",
+      "name": "Karthus",
+      "cost": 4,
+      "image": "TFT10_Karthus.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Katarina": {
+      "id": "TFT10_Katarina",
+      "name": "Katarina",
+      "cost": 2,
+      "image": "TFT10_Katarina.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Kayle": {
+      "id": "TFT10_Kayle",
+      "name": "Kayle",
+      "cost": 2,
+      "image": "TFT10_Kayle.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Kayn": {
+      "id": "TFT10_Kayn",
+      "name": "Kayn",
+      "cost": 5,
+      "image": "TFT10_Kayn.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Kennen": {
+      "id": "TFT10_Kennen",
+      "name": "Kennen",
+      "cost": 1,
+      "image": "TFT10_Kennen.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Lillia": {
+      "id": "TFT10_Lillia",
+      "name": "Lillia",
+      "cost": 1,
+      "image": "TFT10_Lillia.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Lucian": {
+      "id": "TFT10_Lucian",
+      "name": "Lucian",
+      "cost": 5,
+      "image": "TFT10_L
+  

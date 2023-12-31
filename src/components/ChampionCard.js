@@ -3,10 +3,9 @@ import './ChampionCard.css'
 
 const ChampionCard = ({ championName, championImage, cost, traits}) => {
   return (
-    <button className="champion-card">
-      <img src={championImage} alt={championName} />
-      <p>{championName}</p>
-      <p>{cost}</p>
+    <button className="card">
+        <div className="champion-image" background-image = {"../../public/assets/tft-champion/TFT10_Amumu.TFT_Set10.png"}></div>
+        <div className="border">{championName}</div>
     </button>
   );
 };

@@ -8,7 +8,7 @@ function App() {
 
   const [shopIsVisible, setShopIsVisible] = useState(false);
 
-  const [playerGold, setPlayerGold] = useState(50); // Initialize player's gold with 0
+  const [playerGold, setPlayerGold] = useState(500); // Initialize player's gold with 0
 
   const [playerLevel, setPlayerLevel] = useState(2);
 
@@ -32,6 +32,9 @@ function App() {
                     [10, 20, 25, 35, 10], 
                     [5, 10, 20, 40, 25]];
 
+
+  const sellRate = [null, [1, 3, 5], [2, 4, 6], [3, 5, 7], [4, 6, 8], [5, 7, 9]];
+
   const handlePlayClick = () => {
     setIntroIsVisible(false);
 
@@ -46,9 +49,19 @@ function App() {
   };
 
   const levelUp = () => {
-    setPlayerLevel(playerLevel+1);
-    setLevelCost(levelCosts[playerLevel]);
-    setPlayerOdds(shopOdds[playerLevel]);
+    if (playerLevel < 10) {
+      setPlayerLevel(playerLevel+1);
+      setPlayerOdds(shopOdds[playerLevel]);
+      if (playerLevel < 10) {
+        setLevelCost(levelCosts[playerLevel]);
+      
+      //MAX level reached
+      } else {
+        setLevelProgress(null);
+        setLevelCost(Infinity);
+      }
+    }
+    
   }
 
   const buyXP = () => {
@@ -69,10 +82,13 @@ function App() {
   }
 
   const handleLevelClick = () => {
-    if (playerGold >= 4) {
-      updateGold(-4);
-      buyXP();
+    if (playerLevel < 10) {
+      if (playerGold >= 4) {
+        updateGold(-4);
+        buyXP();
+      }
     }
+    
   }
 
   return (
@@ -98,10 +114,12 @@ function App() {
           </div>
           <div className="player-level">
             <p className="player-level-text">Lvl. {playerLevel}</p>
+            
             <p className="player-progress-text">{levelProgress}/{levelCost}</p>
           </div>
 
           <div className="money"> 
+            <div className="gold"></div>
             <p className="money-text">{playerGold}</p>
           </div>
           
@@ -109,12 +127,16 @@ function App() {
 
             <div>
               <button className="level" onClick={handleLevelClick}>
-                <p className="level-text">Buy XP</p>
+                <p className="button-title">Buy XP</p>
+                <p className="button-subtext">4</p>
+                <div className="gold-icon"></div>
 
               </button>
 
               <button className="refresh" onClick={handleRefreshClick} >
-                <p className="refresh-text">Reroll</p>
+                <p className="button-title">Reroll</p>
+                <p className="button-subtext">2</p>
+                <div className="gold-icon"></div>
                 
               </button>
               <ChampionsList></ChampionsList>
