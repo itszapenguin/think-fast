@@ -285,6 +285,8 @@
   text-indent: 10px;
   font-size: 14px;
   color: #F0E6D2;
+  user-select: none;
+
 
 }
 
@@ -301,6 +303,8 @@
   text-indent: 10px;
   font-size: 14px;
   color: #48bc5c;
+  user-select: none;
+
  
 }
 
@@ -317,6 +321,8 @@
   text-indent: 12px;
   font-size: 14px;
   color: #48c4fc;
+  user-select: none;
+
  
 }
 
@@ -334,6 +340,8 @@
   text-indent: 12px;
   font-size: 14px;
   color: #b004a4;
+  user-select: none;
+
  
 }
 
@@ -351,5 +359,6 @@
   text-indent: 10px;
   font-size: 14px;
   color: #ff9404;
+  user-select: none;
  
 }
