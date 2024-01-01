@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import ChampionCard from './components/ChampionCard';
 import ChampionsList from './components/ChampionsList';
 
@@ -17,6 +17,8 @@ function App() {
   const [levelCost, setLevelCost] = useState(2);
 
   const [levelProgress, setLevelProgress] = useState(0);
+
+  const[seperator, setSeperator] = useState("/")
 
   const poolSize = [null, 22, 20, 17, 10, 9];
 
@@ -44,6 +46,7 @@ function App() {
     }, 1000);
   };
 
+
   const updateGold = (amount) => {
     setPlayerGold(playerGold + amount);
   };
@@ -52,13 +55,12 @@ function App() {
     if (playerLevel < 10) {
       setPlayerLevel(playerLevel+1);
       setPlayerOdds(shopOdds[playerLevel]);
+      
       if (playerLevel < 10) {
         setLevelCost(levelCosts[playerLevel]);
-      
-      //MAX level reached
       } else {
-        setLevelProgress(null);
-        setLevelCost(Infinity);
+        setLevelCost(null);
+        
       }
     }
     
@@ -68,10 +70,18 @@ function App() {
     if (levelProgress + 4 < levelCost) {
       setLevelProgress(levelProgress + 4);
     } else {
-      setLevelProgress(levelProgress + 4 - levelCost);
-      levelUp();
       
+      if (playerLevel == 9) {
+        setLevelProgress(null);
+        levelUp();
+        setSeperator("MAX");
+      } else {
+        setLevelProgress(levelProgress + 4 - levelCost);
+        levelUp();
+
+      }
     }
+
   }
 
   const handleRefreshClick = () => {
@@ -80,6 +90,7 @@ function App() {
     }
     
   }
+
 
   const handleLevelClick = () => {
     if (playerLevel < 10) {
@@ -119,7 +130,7 @@ function App() {
           <div className="player-level">
             <p className="player-level-text">Lvl. {playerLevel}</p>
             
-            <p className="player-progress-text">{levelProgress}/{levelCost}</p>
+            <p className="player-progress-text" id="player-progress">{levelProgress}{seperator}{levelCost}</p>
           </div>
 
           <div className="money"> 
@@ -130,14 +141,14 @@ function App() {
           <div className="shop" alt = "shop">
 
             <div>
-              <button className="level" onClick={handleLevelClick}>
+              <button className="level" id="xp-button" onClick={handleLevelClick}>
                 <p className="button-title">Buy XP</p>
                 <p className="button-subtext">4</p>
                 <div className="gold-icon"></div>
 
               </button>
 
-              <button className="refresh" onClick={handleRefreshClick} >
+              <button className="refresh" id="reroll-button" onClick={handleRefreshClick} >
                 <p className="button-title">Reroll</p>
                 <p className="button-subtext">2</p>
                 <div className="gold-icon"></div>
