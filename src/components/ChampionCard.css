@@ -13,19 +13,95 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-left: 0px;
+    padding-top: 0px;
 }
 
 .champion-image {
-    /* background-image: url("../../public/assets/tft-champion/TFT10_Amumu.TFT_Set10.png"); */
-    background-size: cover;
+    background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png");
+    background-size: 100% 100%;
+    /* background-position-y: -30px; */
+    background-repeat: no-repeat;
     width: 173px;
     max-width: 173px;
-    height: 100px;
-    max-height: 100px; 
+    height: 70px;
+    max-height: 70px; 
+    padding-top: 30px;
+    position: absolute;
+    bottom: 23%;
+}
+
+.champion-name {
+    color: #F0E6D2;
+    font-size: 16px;
+    top: 76%;
+    padding-left: 10px;
+    font-family: 'Beaufort-Bold', sans-serif;
+    position: absolute;
+}
+
+.champion-cost {
+    color: #F0E6D2;
+    font-size: 16px;
+    font-family: 'Beaufort-Bold', sans-serif;
+    top: 76%;
+    padding-left: 150px;
+    position: absolute;
+    background-image: url("../../public/assets/hud/gold.png");
+    background-size: 13px 11px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 65%;
+
+}
+
+.champion-gold {
+    background-image: url('../../public/assets/hud/gold.png');
+
+    position: absolute;
+}
+
+.trait-one {
+    background-image: url('../../public/assets/tft-trait/Trait_Icon_10_8Bit.TFT_Set10.png');
+    background-size: 16px 16px;
+    background-position-x: 12px;
+    background-repeat: no-repeat;
+    font-family: 'Spiegel-Regular', sans-serif;
+    position: absolute;
+    padding-left: 30px;
+    top: 60%;
+    font-size: 12px;
+
+}
+
+.trait-two {
+    background-image: url('../../public/assets/tft-trait/Trait_Icon_10_8Bit.TFT_Set10.png');
+    background-size: 16px 16px;
+    background-position-x: 12px;
+    background-repeat: no-repeat;
+    font-family: 'Spiegel-Regular', sans-serif;
+    position: absolute;
+    top: 45%;
+    padding-left: 30px;
+    font-size: 12px;
+
+}
+
+.trait-three {
+    background-image: url('../../public/assets/tft-trait/Trait_Icon_10_8Bit.TFT_Set10.png');
+    background-size: 16px 16px;
+    background-position-x: 12px;
+    background-repeat: no-repeat;
+    font-family: 'Spiegel-Regular', sans-serif;
+
+    position: absolute;
+    top: 30%;
+    padding-left: 30px;
+    font-size: 12px;
+
 }
 
 .border {
-    /* background-image: url("../../public/assets/hud/4-cost-border.png"); */
+    background-image: url("../../public/assets/hud/4-cost-border.png");
     background-size: cover;
     background-position: center;
     transition: background-image 0.2s ease;

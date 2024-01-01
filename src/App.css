@@ -362,3 +362,13 @@
   user-select: none;
  
 }
+
+.shop-container {
+  left: 19%;
+  top: 6%;
+  position:absolute;
+  padding: 5px;
+  background-color: white;
+  width: 79%;
+  height: 79%;
+}

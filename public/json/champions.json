@@ -83,6 +83,13 @@
       "image": "TFT10_Ezreal.TFT_Set10.png",
       "traits": []
     },
+    "TFT10_Garen": {
+      "id": "TFT10_Garen",
+      "name": "Garen",
+      "cost": 2,
+      "image": "TFT10_Garen.TFT_Set10.png",
+      "traits": []
+    },
     "TFT10_Gnar": {
       "id": "TFT10_Gnar",
       "name": "Gnar",
@@ -123,6 +130,20 @@
       "name": "Jinx",
       "cost": 1,
       "image": "TFT10_Jinx.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_KSante": {
+      "id": "TFT10_KSante",
+      "name": "KSante",
+      "cost": 1,
+      "image": "TFT10_KSante.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Kaisa": {
+      "id": "TFT10_Kaisa",
+      "name": "Kaisa",
+      "cost": 2,
+      "image": "TFT10_Kaisa.TFT_Set10.png",
       "traits": []
     },
     "TFT10_Karthus": {
@@ -171,5 +192,225 @@
       "id": "TFT10_Lucian",
       "name": "Lucian",
       "cost": 5,
-      "image": "TFT10_L
+      "image": "TFT10_Lucian.TFT_Set10.png",
+      "triats": []
+    },
+    "TFT10_Lulu": {
+      "id": "TFT10_Lulu",
+      "name": "Lulu",
+      "cost": 3,
+      "image": "TFT10_Lulu.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Lux": {
+      "id": "TFT10_Lux",
+      "name": "Lux",
+      "cost": 3,
+      "image": "TFT10_Lux.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_MissFortune": {
+      "id": "TFT10_MissFortune",
+      "name": "MissFortune",
+      "cost": 3,
+      "image": "TFT10_MissFortune.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Mordekaiser": {
+      "id": "TFT10_Mordekaiser",
+      "name": "Mordekaiser",
+      "cost": 3,
+      "image": "TFT10_Mordekaiser.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Nami": {
+      "id": "TFT10_Nami",
+      "name": "Nami",
+      "cost": 3,
+      "image": "TFT10_Nami.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Neeko": {
+      "id": "TFT10_Neeko",
+      "name": "Neeko",
+      "cost": 3,
+      "image": "TFT10_Neeko.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Olaf": {
+      "id": "TFT10_Olaf",
+      "name": "Olaf",
+      "cost": 1,
+      "image": "TFT10_Olaf.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Pantheon": {
+      "id": "TFT10_Pantheon",
+      "name": "Pantheon",
+      "cost": 2,
+      "image": "TFT10_Pantheon.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Poppy": {
+      "id": "TFT10_Poppy",
+      "name": "Poppy",
+      "cost": 3,
+      "image": "TFT10_Poppy.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Qiyana": {
+      "id": "TFT10_Qiyana",
+      "name": "Qiyana",
+      "cost": 5,
+      "image": "TFT10_Qiyana.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Riven": {
+      "id": "TFT10_Riven",
+      "name": "Riven",
+      "cost": 3,
+      "image": "TFT10_Riven.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Samira": {
+      "id": "TFT10_Samira",
+      "name": "Samira",
+      "cost": 3,
+      "image": "TFT10_Samira.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Senna": {
+      "id": "TFT10_Senna",
+      "name": "Senna",
+      "cost": 2,
+      "image": "TFT10_Senna.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Seraphine": {
+      "id": "TFT10_Seraphine",
+      "name": "Seraphine",
+      "cost": 2,
+      "image": "TFT10_Seraphine.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Sett": {
+      "id": "TFT10_Sett",
+      "name": "Sett",
+      "cost": 3,
+      "image": "TFT10_Sett.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Sona": {
+      "id": "TFT10_Sona",
+      "name": "Sona",
+      "cost": 5,
+      "image": "TFT10_Sona.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_TahmKench": {
+      "id": "TFT10_TahmKench",
+      "name": "TahmKench",
+      "cost": 1,
+      "image": "TFT10_TahmKench.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Taric": {
+      "id": "TFT10_Taric",
+      "name": "Taric",
+      "cost": 1,
+      "image": "TFT10_Taric.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Thresh": {
+      "id": "TFT10_Thresh",
+      "name": "Thresh",
+      "cost": 4,
+      "image": "TFT10_Thresh.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_TwistedFate": {
+      "id": "TFT10_TwistedFate",
+      "name": "TwistedFate",
+      "cost": 4,
+      "image": "TFT10_TwistedFate.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Twitch": {
+      "id": "TFT10_Twitch",
+      "name": "Twitch",
+      "cost": 2,
+      "image": "TFT10_Twitch.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Urgot": {
+      "id": "TFT10_Urgot",
+      "name": "Urgot",
+      "cost": 3,
+      "image": "TFT10_Urgot.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Vex": {
+      "id": "TFT10_Vex",
+      "name": "Vex",
+      "cost": 3,
+      "image": "TFT10_Vex.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Vi": {
+      "id": "TFT10_Vi",
+      "name": "Vi",
+      "cost": 1,
+      "image": "TFT10_Vi.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Viego": {
+      "id": "TFT10_Viego",
+      "name": "Viego",
+      "cost": 4,
+      "image": "TFT10_Viego.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Yasuo": {
+      "id": "TFT10_Yasuo",
+      "name": "Yasuo",
+      "cost": 1,
+      "image": "TFT10_Yasuo.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Yone": {
+      "id": "TFT10_Yone",
+      "name": "Yone",
+      "cost": 3,
+      "image": "TFT10_Yone.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Yorick": {
+      "id": "TFT10_Yorick",
+      "name": "Yorick",
+      "cost": 5,
+      "image": "TFT10_Yorick.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Zac": {
+      "id": "TFT10_Zac",
+      "name": "Zac",
+      "cost": 4,
+      "image": "TFT10_Zac.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Zed": {
+      "id": "TFT10_Zed",
+      "name": "Zed",
+      "cost": 4,
+      "image": "TFT10_Zed.TFT_Set10.png",
+      "traits": []
+    },
+    "TFT10_Ziggs": {
+      "id": "TFT10_Ziggs",
+      "name": "Ziggs",
+      "cost": 5,
+      "image": "TFT10_Ziggs.TFT_Set10.png",
+      "traits": []
+    }
+  }
   

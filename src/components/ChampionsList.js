@@ -5,11 +5,11 @@ import './ChampionsList.css';
 const ChampionsList = () => {
   return (
     <div className='container'>
-      <ChampionCard championName={"one"} className="slot-one"></ChampionCard>
-      <ChampionCard championName={"two"}></ChampionCard>
-      <ChampionCard championName={"three"}></ChampionCard>
-      <ChampionCard championName={"four"}></ChampionCard>
-      <ChampionCard championName={"five"}></ChampionCard>
+      <ChampionCard championName = {"Ezreal"} cost={"4"}></ChampionCard>
+      <ChampionCard championName = {"Akali"} cost={"4"}></ChampionCard>
+      <ChampionCard></ChampionCard>
+      <ChampionCard></ChampionCard>
+      <ChampionCard></ChampionCard>
     </div>
   );
 };
