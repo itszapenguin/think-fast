@@ -19,7 +19,6 @@
 .champion-image {
     background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png");
     background-size: 100% 100%;
-    /* background-position-y: -30px; */
     background-repeat: no-repeat;
     width: 173px;
     max-width: 173px;

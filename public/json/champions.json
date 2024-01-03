@@ -18,14 +18,14 @@
       "name": "Amumu",
       "cost": 3,
       "image": "TFT10_Amumu.TFT_Set10.png",
-      "traits": []
+      "traits": ["Emo", "Guardian"]
     },
     "TFT10_Annie": {
       "id": "TFT10_Annie",
       "name": "Annie",
       "cost": 1,
       "image": "TFT10_Annie.TFT_Set10.png",
-      "traits": []
+      "traits": ["Emo", "Guardian"]
     },
     "TFT10_Aphelios": {
       "id": "TFT10_Aphelios",

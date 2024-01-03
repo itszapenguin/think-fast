@@ -1,0 +1,55 @@
+
+.level {
+    background-image: url("../../public/assets/hud/level.png"); 
+    background-color: #0A1428;
+    background-size: cover;
+    width: 180px;
+    height: 65px;
+    border-width: 0;
+    top: 5%;
+    left: 0.75%;
+    position: absolute;
+    transition: background-image 0.2s ease;
+    
+  }
+  
+  .level:hover {
+    background-image: url("../../public/assets/hud/level-hover.png");
+  }
+  
+  .level:active {
+    background-image: url("../../public/assets/hud/level-pressed.png");
+  }
+
+  .button-title {
+    font-family: 'Beaufort-Bold', sans-serif;
+    color: #F0E6D2;
+    position: absolute;
+    font-size: 18px;
+    left: 10%;
+    bottom: 20%
+  
+    
+  }
+
+  .button-subtext {
+    font-family: 'Beaufort-Bold', sans-serif; 
+    user-select: none;
+    color: #F0E6D2;
+    font-size: 16px;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+  
+  }
+
+  .gold-icon {
+    background-image: url("../../public/assets/hud/gold.png");
+    background-size: cover;
+    width: 13px;
+    height: 11px;
+    position: absolute;
+    top: 58%;
+    left: 10%; 
+  }
+  

@@ -2,6 +2,9 @@ import './App.css';
 import React, { useState, useEffect, useCallback } from 'react';
 import ChampionCard from './components/ChampionCard';
 import ChampionsList from './components/ChampionsList';
+import XPButton from './components/XPButton';
+import RerollButton from './components/RerollButton';
+
 
 function App() {
   const [introIsVisible, setIntroIsVisible] = useState(true);
@@ -102,6 +105,26 @@ function App() {
     
   }
 
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'f' || event.key === 'F') {
+        handleLevelClick();
+      }
+      if (event.key === 'd' || event.key === 'D') {
+        handleRefreshClick();
+      }
+    };
+
+    // Add event listener when the component mounts
+    window.addEventListener('keydown', handleKeyDown);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [playerLevel, playerGold, levelProgress, levelCost]);
+
+
   return (
     <div className="arena" alt="arena"> 
       {introIsVisible && (
@@ -141,19 +164,9 @@ function App() {
           <div className="shop" alt = "shop">
 
             <div>
-              <button className="level" id="xp-button" onClick={handleLevelClick}>
-                <p className="button-title">Buy XP</p>
-                <p className="button-subtext">4</p>
-                <div className="gold-icon"></div>
+              <XPButton onClick={handleLevelClick}></XPButton>
+              <RerollButton onClick={handleRefreshClick}></RerollButton>
 
-              </button>
-
-              <button className="refresh" id="reroll-button" onClick={handleRefreshClick} >
-                <p className="button-title">Reroll</p>
-                <p className="button-subtext">2</p>
-                <div className="gold-icon"></div>
-                
-              </button>
               <ChampionsList></ChampionsList>
 
 
