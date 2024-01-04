@@ -1,10 +1,9 @@
 import './App.css';
 import React, { useState, useEffect, useCallback } from 'react';
-import ChampionCard from './components/ChampionCard';
 import ChampionsList from './components/ChampionsList';
 import XPButton from './components/XPButton';
 import RerollButton from './components/RerollButton';
-
+import championData from './champions.json'
 
 function App() {
   const [introIsVisible, setIntroIsVisible] = useState(true);
@@ -23,8 +22,6 @@ function App() {
 
   const[seperator, setSeperator] = useState("/")
 
-  const poolSize = [null, 22, 20, 17, 10, 9];
-
   const levelCosts = [null, null, 6, 10, 20, 36, 48, 80, 84];
 
   const shopOdds = [null, null, 
@@ -40,8 +37,97 @@ function App() {
 
   const sellRate = [null, [1, 3, 5], [2, 4, 6], [3, 5, 7], [4, 6, 8], [5, 7, 9]];
 
+
+  const [championsPool, setChampionsPool] = useState(initializeChampionsPool());
+
+  const [shop, setShop] = useState([]);
+
+
+  // Function to initialize the champions pool
+  function initializeChampionsPool() {
+    // Create separate pools for each cost
+    const poolsByCost = {};
+
+    // Iterate over the championData object
+    Object.values(championData).forEach((champion) => {
+      const cost = champion.cost;
+
+      // Check if the cost pool exists, if not, create an empty array
+      if (!poolsByCost[cost]) {
+        poolsByCost[cost] = [];
+      }
+
+      // Add the specified number of copies for each champion to the corresponding cost pool
+      const numberOfCopies = getNumberOfCopiesByCost(cost);
+      for (let i = 0; i < numberOfCopies; i++) {
+        poolsByCost[cost].push({ ...champion }); // Create a copy of the champion
+      }
+    });
+
+    console.log("POOLS:");
+    console.log(poolsByCost);
+    console.log(poolsByCost[1][1].image);
+    return poolsByCost;
+  
+  }
+
+  function genShop() {
+    const champions = [];
+    for (let i = 0; i < 5; i++) {
+      const randomCost = genRandomCost();
+      const randomIndex = Math.floor(Math.random() * championsPool[randomCost].length);
+      console.log("generated random unit, ", randomCost, randomIndex);
+      champions.push(championsPool[randomCost][randomIndex]);
+    }
+    console.log("new shop", champions);
+      // Use the previous shop value from the closure
+    
+    setShop(champions);
+    console.log("Updated Shop: ", shop);
+
+  }
+  
+  function getNumberOfCopiesByCost(cost) {
+    // Define the number of copies for each cost
+    const copiesByCost = {
+      1: 22,
+      2: 20,
+      3: 17,
+      4: 10,
+      5: 9,
+      };
+  
+    return copiesByCost[cost] || 0;
+  }
+
+
+  function genRandomCost() {
+    var random = Math.random()*100;
+    var cost = 1;
+    while (random > playerOdds[cost-1]) {
+      random-= playerOdds[cost-1];
+      cost++;
+    }
+
+    //if pool is empty, reroll for new cost
+    if (championsPool[cost].length == 0) {
+      cost = genRandomCost();
+    }
+    return cost;
+
+  }
+
+  function reroll() {
+    genShop();
+
+  }
+
+
+
+
   const handlePlayClick = () => {
     setIntroIsVisible(false);
+    setShop(genShop());
 
     //timer for shop visibility
     setTimeout(() => {
@@ -54,7 +140,7 @@ function App() {
     setPlayerGold(playerGold + amount);
   };
 
-  const levelUp = () => {
+  function levelUp() {
     if (playerLevel < 10) {
       setPlayerLevel(playerLevel+1);
       setPlayerOdds(shopOdds[playerLevel]);
@@ -69,7 +155,7 @@ function App() {
     
   }
 
-  const buyXP = () => {
+  function buyXP() {
     if (levelProgress + 4 < levelCost) {
       setLevelProgress(levelProgress + 4);
     } else {
@@ -90,6 +176,7 @@ function App() {
   const handleRefreshClick = () => {
     if (playerGold >= 2) {
       updateGold(-2);
+      reroll();
     }
     
   }
@@ -114,7 +201,6 @@ function App() {
         handleRefreshClick();
       }
     };
-
     // Add event listener when the component mounts
     window.addEventListener('keydown', handleKeyDown);
 
@@ -122,7 +208,7 @@ function App() {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [playerLevel, playerGold, levelProgress, levelCost]);
+  }, [playerLevel, playerGold, levelProgress, levelCost, shop]);
 
 
   return (
@@ -167,8 +253,7 @@ function App() {
               <XPButton onClick={handleLevelClick}></XPButton>
               <RerollButton onClick={handleRefreshClick}></RerollButton>
 
-              <ChampionsList></ChampionsList>
-
+              {shop !== undefined && <ChampionsList shop={shop} />}
 
   
             </div>
