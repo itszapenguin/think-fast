@@ -3,6 +3,10 @@ import './ChampionCard.css'
 
 const ChampionCard = ({ championName, championImage, cost, traits = [], onClick}) => {
 
+    const [isHovered, setIsHovered] = React.useState(false);
+
+    const [isBought, setIsBought] = React.useState(false);
+    
     let borderImageURL = "https://i.imgur.com/6F8xRcE.png";
     let hoverImageURL = "";
 
@@ -80,6 +84,7 @@ const ChampionCard = ({ championName, championImage, cost, traits = [], onClick}
     let traitOneImage = getTraitImage(traitOne);
     let traitTwoImage = getTraitImage(traitTwo);
     let traitThreeImage = getTraitImage(traitThree);
+    
 
     return (
         <button className="card" onClick={onClick}>
@@ -93,10 +98,11 @@ const ChampionCard = ({ championName, championImage, cost, traits = [], onClick}
             </div>
             <div className="trait-two" style={{backgroundImage: `url(${traitTwoImage})`}}>{traitTwo}</div>
             <div className="trait-three" style={{backgroundImage: `url(${traitThreeImage})`}}>{traitThree}</div>
-            <div className="border" 
-                style={{ backgroundImage: `url(${borderImageURL})`
-                }}  
-            
+            <div 
+                className="border" 
+                style={{ backgroundImage: `url(${isHovered ? hoverImageURL : borderImageURL})`}}
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
             ></div>
             <div className="champion-name">{championName}</div>
             <div className="champion-cost">{cost}</div>
