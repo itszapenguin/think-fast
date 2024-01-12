@@ -3,354 +3,413 @@
       "name": "Ahri",
       "cost": 4,
       "image": "TFT10_Ahri.TFT_Set10.png",
+      "url": "https://i.imgur.com/oBt8gYB.png",
       "traits": ["Spellweaver", "K/DA"]
   },
   "Akali": {
       "name": "Akali",
       "cost": 4,
       "image": "TFT10_Akali.TFT_Set10.png",
+      "url": "https://i.imgur.com/8psP04N.png",
       "traits": ["Executioner", "Breakout", "K/DA"]
   },
   "Amumu": {
       "name": "Amumu",
       "cost": 3,
       "image": "TFT10_Amumu.TFT_Set10.png",
+      "url": "https://i.imgur.com/tmJruzH.png",
       "traits": ["Guardian", "Emo"]
   },
   "Annie": {
       "name": "Annie",
       "cost": 1,
       "image": "TFT10_Annie.TFT_Set10.png",
+      "url": "https://i.imgur.com/u7t7MHf.png",
       "traits": ["Spellweaver", "Emo"]
   },
   "Aphelios": {
       "name": "Aphelios",
       "cost": 2,
       "image": "TFT10_Aphelios.TFT_Set10.png",
+      "url": "https://i.imgur.com/7kv6qWY.png",
       "traits": ["Rapidfire", "HEARTSTEEL"]
   },
   "Bard": {
       "name": "Bard",
       "cost": 2,
       "image": "TFT10_Bard.TFT_Set10.png",
+      "url": "https://i.imgur.com/9HOplsv.png",
       "traits": ["Dazzler", "Jazz"]
   },
   "Blitzcrank": {
       "name": "Blitzcrank",
       "cost": 4,
       "image": "TFT10_Blitzcrank.TFT_Set10.png",
+      "url": "https://i.imgur.com/Ps2UqmW.png",
       "traits": ["Sentinel", "Disco"]
   },
   "Caitlyn": {
       "name": "Caitlyn",
       "cost": 4,
       "image": "TFT10_Caitlyn.TFT_Set10.png",
+      "url": "https://i.imgur.com/SwpeO8e.png",
       "traits": ["Rapidfire", "8-Bit"]
   },
   "Corki": {
       "name": "Corki",
       "cost": 1,
       "image": "TFT10_Corki.TFT_Set10.png",
+      "url": "https://i.imgur.com/sJkjX0B.png",
       "traits": ["Big Shot", "8-Bit"]
   },
   "Ekko": {
       "name": "Ekko",
       "cost": 3,
       "image": "TFT10_Ekko.TFT_Set10.png",
+      "url": "https://i.imgur.com/aSE6D69.png",
       "traits": ["Sentinel", "Spellweaver", "True Damage"]
   },
   "Evelynn": {
       "name": "Evelynn",
       "cost": 1,
       "image": "TFT10_Evelynn.TFT_Set10.png",
+      "url": "https://i.imgur.com/X5ctWHR.png",
       "traits": ["Crowd Diver", "K/DA"]
   },
   "Ezreal": {
       "name": "Ezreal",
       "cost": 4,
       "image": "TFT10_Ezreal.TFT_Set10.png",
+      "url": "https://i.imgur.com/mogIcJO.png",
       "traits": ["Big Shot", "HEARTSTEEL"]
   },
   "Garen": {
       "name": "Garen",
       "cost": 2,
       "image": "TFT10_Garen.TFT_Set10.png",
+      "url": "https://i.imgur.com/c8XW1JR.png",
       "traits": ["Sentinel", "8-Bit"]
   },
   "Gnar": {
       "name": "Gnar",
       "cost": 2,
       "image": "TFT10_Gnar.TFT_Set10.png",
+      "url": "https://i.imgur.com/ExJlDI5.png",
       "traits": ["Mosher", "Superfan", "Pentakill"]
   },
   "Gragas": {
       "name": "Gragas",
       "cost": 2,
       "image": "TFT10_Gragas.TFT_Set10.png",
+      "url": "https://i.imgur.com/31YTm3W.png",
       "traits": ["Bruiser", "Spellweaver", "Disco"]
   },
   "Illaoi": {
       "name": "Illaoi",
       "cost": 5,
       "image": "TFT10_Illaoi.TFT_Set10.png",
+      "url": "https://i.imgur.com/YQ2PdId.png",
       "traits": ["Bruiser", "ILLBEATS"]
   },
   "Jax": {
       "name": "Jax",
       "cost": 2,
       "image": "TFT10_Jax.TFT_Set10.png",
+      "url": "https://i.imgur.com/sD7AcPc.png",
       "traits": ["Mosher", "EDM"]
   },
   "Jhin": {
       "name": "Jhin",
       "cost": 5,
       "image": "TFT10_Jhin.TFT_Set10.png",
+      "url": "https://i.imgur.com/mJr6hDS.png",
       "traits": ["Big Shot", "Maestro"]
   },
   "Jinx": {
       "name": "Jinx",
       "cost": 1,
       "image": "TFT10_Jinx.TFT_Set10.png",
+      "url": "https://i.imgur.com/2U9sASW.png",
       "traits": ["Rapidfire", "Punk"]
   },
   "KSante": {
       "name": "KSante",
       "cost": 1,
       "image": "TFT10_KSante.TFT_Set10.png",
+      "url": "https://i.imgur.com/A2NWYkO.png",
       "traits": ["Sentinel", "HEARTSTEEL"]
   },
   "Kaisa": {
       "name": "Kaisa",
       "cost": 2,
       "image": "TFT10_Kaisa.TFT_Set10.png",
+      "url": "https://i.imgur.com/TcnzvsC.png",
       "traits": ["Big Shot", "K/DA"]
   },
   "Karthus": {
       "name": "Karthus",
       "cost": 4,
       "image": "TFT10_Karthus.TFT_Set10.png",
+      "url": "https://i.imgur.com/1TDj5wm.png",
       "traits": ["Executioner", "Pentakill"]
   },
   "Katarina": {
       "name": "Katarina",
       "cost": 2,
       "image": "TFT10_Katarina.TFT_Set10.png",
+      "url": "https://i.imgur.com/yywwJFQ.png",
       "traits": ["Crowd Diver", "Country"]
   },
   "Kayle": {
       "name": "Kayle",
       "cost": 2,
       "image": "TFT10_Kayle.TFT_Set10.png",
+      "url": "https://i.imgur.com/6MXY72Z.png",
       "traits": ["Edgelord", "Pentakill"]
   },
   "Kayn": {
       "name": "Kayn",
       "cost": 5,
       "image": "TFT10_Kayn.TFT_Set10.png",
+      "url": "https://i.imgur.com/0KVLLmW.png",
       "traits": ["Edgelord", "Wildcard", "HEARTSTEEL"]
   },
   "Kennen": {
       "name": "Kennen",
       "cost": 1,
       "image": "TFT10_Kennen.TFT_Set10.png",
+      "url": "https://i.imgur.com/K5pWnWL.png",
       "traits": ["Guardian", "Superfan", "True Damage"]
   },
   "Lillia": {
       "name": "Lillia",
       "cost": 1,
       "image": "TFT10_Lillia.TFT_Set10.png",
+      "url": "https://i.imgur.com/RWRoYPo.png",
       "traits": ["Sentinel", "Superfan", "K/DA"]
   },
   "Lucian": {
       "name": "Lucian",
       "cost": 5,
       "image": "TFT10_Lucian.TFT_Set10.png",
+      "url": "https://i.imgur.com/Cm6jW41.png",
       "traits": ["Rapidfire", "Jazz"]
   },
   "Lulu": {
       "name": "Lulu",
       "cost": 3,
       "image": "TFT10_Lulu.TFT_Set10.png",
+      "url": "https://i.imgur.com/37PTEAW.png",
       "traits": ["Spellweaver", "Hyperpop"]
   },
   "Lux": {
       "name": "Lux",
       "cost": 3,
       "image": "TFT10_Lux.TFT_Set10.png",
+      "url": "https://i.imgur.com/eQKBmDk.png",
       "traits": ["Dazzler", "EDM"]
   },
   "MissFortune": {
       "name": "MissFortune",
       "cost": 3,
       "image": "TFT10_MissFortune.TFT_Set10.png",
+      "url": "https://i.imgur.com/oJ8W9dS.png", 
       "traits": ["Big Shot", "Jazz"]
   },
   "Mordekaiser": {
       "name": "Mordekaiser",
       "cost": 3,
       "image": "TFT10_Mordekaiser.TFT_Set10.png",
+      "url": "https://i.imgur.com/N8KCrY2.png",
       "traits": ["Sentinel", "Pentakill"]
   },
   "Nami": {
       "name": "Nami",
       "cost": 1,
       "image": "TFT10_Nami.TFT_Set10.png",
+      "url": "https://i.imgur.com/G8FttQ2.png",
       "traits": ["Dazzler", "Disco"]
   },
   "Neeko": {
       "name": "Neeko",
       "cost": 3,
       "image": "TFT10_Neeko.TFT_Set10.png",
+      "url": "https://i.imgur.com/qRzXIAy.png",
       "traits": ["Guardian", "Superfan", "K/DA"]
   },
   "Olaf": {
       "name": "Olaf",
       "cost": 1,
       "image": "TFT10_Olaf.TFT_Set10.png",
+      "url": "https://i.imgur.com/P2kbj58.png",
       "traits": ["Bruiser", "Pentakill"]
   },
   "Pantheon": {
       "name": "Pantheon",
       "cost": 2,
       "image": "TFT10_Pantheon.TFT_Set10.png",
+      "url": "https://i.imgur.com/AAX9dwS.png",
       "traits": ["Guardian", "Punk"]
   },
   "Poppy": {
       "name": "Poppy",
       "cost": 4,
       "image": "TFT10_Poppy.TFT_Set10.png",
+      "url": "https://i.imgur.com/pajRnWb.png",
       "traits": ["Mosher", "Emo"]
   },
   "Qiyana": {
       "name": "Qiyana",
       "cost": 5,
       "image": "TFT10_Qiyana.TFT_Set10.png",
+      "url": "https://i.imgur.com/TC3b1lq.png",
       "traits": ["Crowd Diver", "True Damage"]
   },
   "Riven": {
       "name": "Riven",
       "cost": 3,
       "image": "TFT10_Riven.TFT_Set10.png",
+      "url": "https://i.imgur.com/GDrNXby.png",
       "traits": ["Edgelord", "8-Bit"]
   },
   "Samira": {
       "name": "Samira",
       "cost": 3,
       "image": "TFT10_Samira.TFT_Set10.png",
+      "url": "https://i.imgur.com/RYk3wUd.png",
       "traits": ["Executioner", "Country"]
   },
   "Senna": {
       "name": "Senna",
       "cost": 2,
       "image": "TFT10_Senna.TFT_Set10.png",
+      "url": "https://i.imgur.com/dPHFmfJ.png",
       "traits": ["Rapidfire", "True Damage"]
   },
   "Seraphine": {
       "name": "Seraphine",
       "cost": 2,
       "image": "TFT10_Seraphine.TFT_Set10.png",
+      "url": "https://i.imgur.com/uInKZs9.png",
       "traits": ["Spellweaver", "K/DA"]
   },
   "Sett": {
       "name": "Sett",
       "cost": 3,
       "image": "TFT10_Sett.TFT_Set10.png",
+      "url": "https://i.imgur.com/VmASCfc.png",
       "traits": ["Mosher", "Bruiser", "HEARTSTEEL"]
   },
   "Sona": {
       "name": "Sona",
       "cost": 5,
       "image": "TFT10_Sona.TFT_Set10.png",
+      "url": "https://i.imgur.com/MH0AHvm.png",
       "traits": ["Spellweaver", "Mixmaster"]
   },
   "TahmKench": {
       "name": "TahmKench",
       "cost": 1,
       "image": "TFT10_TahmKench.TFT_Set10.png",
+      "url": "https://i.imgur.com/TD7e5gz.png",
       "traits": ["Bruiser", "Country"]
   },
   "Taric": {
       "name": "Taric",
       "cost": 1,
       "image": "TFT10_Taric.TFT_Set10.png",
+      "url": "https://i.imgur.com/67GOOrP.png",
       "traits": ["Guardian", "Disco"]
   },
   "Thresh": {
       "name": "Thresh",
       "cost": 4,
       "image": "TFT10_Thresh.TFT_Set10.png",
+      "url": "https://i.imgur.com/Tc1vlbu.png",
       "traits": ["Guardian", "Country"]
   },
   "TwistedFate": {
       "name": "TwistedFate",
       "cost": 4,
       "image": "TFT10_TwistedFate.TFT_Set10.png",
+      "url": "https://i.imgur.com/hOh6CGv.png",
       "traits": ["Dazzler", "Disco"]
   },
   "Twitch": {
       "name": "Twitch",
       "cost": 2,
       "image": "TFT10_Twitch.TFT_Set10.png",
+      "url": "https://i.imgur.com/psYiLWh.png",
       "traits": ["Executioner", "Punk"]
   },
   "Urgot": {
       "name": "Urgot",
       "cost": 3,
       "image": "TFT10_Urgot.TFT_Set10.png",
+      "url": "https://i.imgur.com/Nm6vrnj.png",
       "traits": ["Mosher", "Country"]
   },
   "Vex": {
       "name": "Vex",
       "cost": 3,
       "image": "TFT10_Vex.TFT_Set10.png",
+      "url": "https://i.imgur.com/HfvcERc.png",
       "traits": ["Executioner", "Emo"]
   },
   "Vi": {
       "name": "Vi",
       "cost": 1,
       "image": "TFT10_Vi.TFT_Set10.png",
+      "url": "https://i.imgur.com/YtYrclG.png",
       "traits": ["Mosher", "Punk"]
   },
   "Viego": {
       "name": "Viego",
       "cost": 4,
       "image": "TFT10_Viego.TFT_Set10.png",
+      "url": "https://i.imgur.com/BF0k6yX.png",
       "traits": ["Edgelord", "Pentakill"]
   },
   "Yasuo": {
       "name": "Yasuo",
       "cost": 1,
       "image": "TFT10_Yasuo.TFT_Set10.png",
+      "url": "https://i.imgur.com/fMk7jrQ.png",
       "traits": ["Edgelord", "True Damage"]
   },
   "Yone": {
       "name": "Yone",
       "cost": 3,
       "image": "TFT10_Yone.TFT_Set10.png",
+      "url": "https://i.imgur.com/XKLAdRz.png",
       "traits": ["Crowd Diver", "Edgelord", "HEARTSTEEL"]
   },
   "Yorick": {
       "name": "Yorick",
       "cost": 5,
       "image": "TFT10_Yorick.TFT_Set10.png",
+      "url": "https://i.imgur.com/3oVpnih.png",
       "traits": ["Guardian", "Mosher", "Pentakill"]
   },
   "Zac": {
       "name": "Zac",
       "cost": 4,
       "image": "TFT10_Zac.TFT_Set10.png",
+      "url": "https://i.imgur.com/h0NwXLd.png",
       "traits": ["Bruiser", "EDM"]
   },
   "Zed": {
       "name": "Zed",
       "cost": 4,
       "image": "TFT10_Zed.TFT_Set10.png",
+      "url": "https://i.imgur.com/0Y9319x.png",
       "traits": ["Crowd Diver", "EDM"]
   },
   "Ziggs": {
       "name": "Ziggs",
       "cost": 5,
       "image": "TFT10_Ziggs.TFT_Set10.png",
+      "url": "https://i.imgur.com/GETDPbi.png",
       "traits": ["Dazzler", "Hyperpop"]
   }
 }

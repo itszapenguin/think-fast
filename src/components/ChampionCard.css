@@ -17,8 +17,9 @@
 }
 
 .champion-image {
-    background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png");
-    /* background-image: url("../tft-champion/TFT10_Illaoi.TFT_Set10.png"); */
+    /* background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png"); */
+    background-image: url("../../public/assets/tft-champion/TFT10_Illaoi.TFT_Set10.png");
+    
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 173px;
