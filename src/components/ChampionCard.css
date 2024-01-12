@@ -17,7 +17,8 @@
 }
 
 .champion-image {
-    /* background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png"); */
+    background-image: url("../../public/assets/tft-champion/TFT10_Ezreal.TFT_Set10.png");
+    /* background-image: url("../tft-champion/TFT10_Illaoi.TFT_Set10.png"); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 173px;
@@ -100,7 +101,7 @@
 }
 
 .border {
-    /* background-image: url("../../public/assets/hud/5-cost-border.png"); */
+    background-image: url("../../public/assets/hud/5-cost-border.png");
     background-size: cover;
     background-position: center;
     transition: background-image 0.2s ease;
@@ -110,6 +111,11 @@
     height: 130px;
     max-height: 130px;
     top: 3%;
+
+
+
+
+    /*ignore this
     /* right: 10px; */
     
 }

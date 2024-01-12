@@ -284,3 +284,9 @@
   width: 79%;
   height: 79%;
 }
+
+.test {
+  position: absolute;
+  min-width: 200px;
+  min-height: 200px;
+}

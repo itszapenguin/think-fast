@@ -42,6 +42,104 @@ function App() {
 
   const [shop, setShop] = useState([]);
 
+  //DISABLE Buttons
+  useEffect(() => {
+    //MAYBE CAN OPTIMISE?
+    // Check if the current state variable is less than 10
+    if (playerGold > 4) {
+
+    } else {
+
+    }
+
+    if (playerGold > 2) {
+
+    } else {
+
+    }
+
+
+  }, [playerGold]); // Dependency array ensures the effect runs when yourStateVariable changes
+
+  //can we consolidate to one singular helper function with parameter index?
+  function buyChampionOne() {
+    if (shop[0] != null) {
+      if (playerGold >= shop[0].cost) {
+        setPlayerGold(playerGold - shop[0].cost);
+        //remove from pool
+      }
+
+    }
+    removeFromShop(0);
+
+
+  }
+
+  function buyChampionTwo() {
+    if (shop[1] != null) {
+      if (playerGold >= shop[1].cost) {
+        setPlayerGold(playerGold - shop[1].cost);
+      }
+    }
+  }
+
+  function buyChampionThree() {
+    if (shop[2] != null) {
+      if (playerGold >= shop[2].cost) {
+        setPlayerGold(playerGold - shop[2].cost);
+
+      }
+    }
+  }
+
+  function buyChampionFour() {
+    if (shop[3] != null) {
+      if (playerGold >= shop[3].cost) {
+        setPlayerGold(playerGold - shop[3].cost);
+
+      }
+    }
+  }
+
+  function buyChampionFive() {
+    if (shop[4] != null) {
+      if (playerGold >= shop[4].cost) {
+        setPlayerGold(playerGold - shop[4].cost);
+
+      }
+    }
+  }
+
+  function removeFromShop(index) {
+    // let newShop = shop;
+    // newShop[index] = null;
+    // setShop(newShop);
+
+  }
+
+  function removeFromPool(championName, cost) {
+    let newChampionsPool = championsPool;
+    let newCostPool = championsPool.get(cost);
+    let index = -1;
+    
+    //bad linear search
+    for (let i = 0; i < newCostPool.length; i++) {
+      if (newCostPool[i].name === championName) {
+        index = i;
+        break;
+      }
+    }
+
+    if (index !== -1) {
+      newCostPool.splice(index, 1);
+    }
+
+    newChampionsPool[cost] = newCostPool;
+    setChampionsPool(newChampionsPool);
+
+  }
+
+
 
   // Function to initialize the champions pool
   function initializeChampionsPool() {
@@ -64,14 +162,12 @@ function App() {
       }
     });
 
-    console.log("POOLS:");
-    console.log(poolsByCost);
-    console.log(poolsByCost[1][1].image);
+    console.log("POOLS:", poolsByCost);
     return poolsByCost;
   
   }
 
-  function genShop() {
+  function reroll() {
     const champions = [];
     for (let i = 0; i < 5; i++) {
       const randomCost = genRandomCost();
@@ -117,20 +213,15 @@ function App() {
 
   }
 
-  function reroll() {
-    genShop();
-
-  }
-
-
 
 
   const handlePlayClick = () => {
     setIntroIsVisible(false);
-    setShop(genShop());
+
 
     //timer for shop visibility
     setTimeout(() => {
+      reroll();
       setShopIsVisible(true);
     }, 1000);
   };
@@ -253,10 +344,11 @@ function App() {
               <XPButton onClick={handleLevelClick}></XPButton>
               <RerollButton onClick={handleRefreshClick}></RerollButton>
 
-              {shop !== undefined && <ChampionsList shop={shop} />}
-
+              {shop !== undefined && <ChampionsList shop={shop} buyChampionOne={buyChampionOne} buyChampionTwo={buyChampionTwo} buyChampionThree={buyChampionThree} buyChampionFour={buyChampionFour} buyChampionFive={buyChampionFive}/>}
   
             </div>
+
+            {/* <img className="test" src="https://i.imgur.com/oBt8gYB.png" alt="React Image" /> */}
           
           </div>
         </div>
